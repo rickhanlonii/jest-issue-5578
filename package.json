@@ -1,0 +1,29 @@
+{
+  "name": "jest-issue-5578",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "@rickhanlonii",
+  "license": "MIT",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "modulePaths": [
+      "<rootDir>/app_root/"
+    ],
+    "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "jest": "^22.3.0",
+    "react": "^16.2.0"
+  }
+}
